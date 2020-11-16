@@ -1,27 +1,44 @@
 import SideBar from "./SideBar"
+import { ThemeContext } from "../../../config/ThemeProvider";
+import { theme } from "../../../config/theme";
 
 export default {
-    title: 'Common/Sidebar',
-    component: SideBar,
-    argTypes: {
-      backgroundColor: { control: 'color' },
-    },
-  };
-  
-  let fictures = [
-    {
-      label: "Home",
-      icon: "home",
-      name: "home",
-    },
-    {},
-  ];
+  title: 'Common/Sidebar',
+  component: SideBar,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+};
 
-  const Template = (args) => <SideBar {...args} />;
+let fictures = [
+  {
+    label: "Overview",
+    icon: "home",
+    name: "overview",
+  },
+  {
+    label: "Accounts",
+    icon: "credit card",
+    name: "accounts",
+  },
+  {
+    label: "Invoices",
+    icon: "copy outline",
+    name: "invoices",
+  },
+];
 
-  export const _Sidebar = Template.bind({})
+const Template = (args) => <ThemeContext.Provider value={theme.light}>
+  <SideBar {...args} />
+</ThemeContext.Provider>
 
-  _Sidebar.args ={
-      items:fictures,
-      vertical:true
-  }
+export const _Sidebar = Template.bind({})
+
+const onClick = (item) => {
+  console.log("item clicked")
+}
+_Sidebar.args = {
+  items: fictures,
+  vertical: true,
+  onClick: onClick
+}

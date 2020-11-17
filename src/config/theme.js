@@ -4,7 +4,8 @@ export const theme = {
             color: "blue",
             inverted: false,
             itemColor: "",
-            iconColor: "blue"
+            iconColor: "blue",
+            headerColor: "#303778"
         }
     },
     dark: {

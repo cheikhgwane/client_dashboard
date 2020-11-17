@@ -2,7 +2,6 @@ import React from "react";
 import { Menu, Icon, Image } from "semantic-ui-react";
 import logo from "../../../assets/logo.png";
 import { ThemeContext } from "../../../config/ThemeProvider";
-
 import "./Sidebar.css";
 
 const { Item } = Menu;
@@ -20,7 +19,7 @@ export default function SideBar({ items, vertical, onClick }) {
     <Menu inverted={sideBar.inverted} color={sideBar.color} vertical={vertical}>
       <Item style={{ display: "flex" }}>
         <div>
-          <h2>PentaBank</h2>
+          <h2 style={{ color: sideBar.headerColor }}>PentaBank</h2>
         </div>
         <div>
           <Image circular size="mini" src={logo}></Image>

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Menu, Icon, Image } from "semantic-ui-react";
+import { Menu, Icon, Image, Divider } from "semantic-ui-react";
 import { ThemeContext } from "../../../config/ThemeProvider";
 import logo from "../../../assets/logo.png";
 import "./Sidebar.css";
@@ -17,15 +17,22 @@ export default function SideBar({ items, vertical, onClick }) {
   };
 
   return (
-    <Menu inverted={sideBar.inverted} color={sideBar.color} vertical={vertical}>
-      <Item style={{ display: "flex" }}>
+    <Menu
+      fluid
+      borderless
+      secondary
+      inverted={sideBar.inverted}
+      color={sideBar.color}
+      vertical={vertical}>
+      <Item style={{ display: "flex", height: 100 }}>
         <div>
           <h2 style={{ color: sideBar.headerColor }}>PentaBank</h2>
         </div>
         <div>
-          <Image circular size="mini" src={logo}></Image>
+          <Image circular size="tiny" src={logo}></Image>
         </div>
       </Item>
+      <Divider></Divider>
       {items.map((menu, key) =>
         Object.keys(menu).length ? (
           <Item

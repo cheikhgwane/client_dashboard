@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Icon, Label } from "semantic-ui-react";
 
 import "./NavBar.css";
 
-export function NavBar({ items, onClick }) {
+export default function NavBar({ items, onClick }) {
   return (
     <div className="navRoot">
       <div className="notif">

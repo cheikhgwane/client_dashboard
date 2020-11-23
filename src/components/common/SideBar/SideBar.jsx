@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Menu, Icon, Image } from "semantic-ui-react";
-import logo from "../../../assets/logo.png";
 import { ThemeContext } from "../../../config/ThemeProvider";
+import logo from "../../../assets/logo.png";
 import "./Sidebar.css";
 
 const { Item } = Menu;
@@ -47,3 +48,9 @@ export default function SideBar({ items, vertical, onClick }) {
     </Menu>
   );
 }
+
+SideBar.propTypes = {
+  items: PropTypes.array.isRequired,
+  vertical: PropTypes.bool,
+  onClick: PropTypes.func.isRequired,
+};

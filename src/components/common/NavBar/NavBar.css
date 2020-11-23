@@ -1,0 +1,13 @@
+.navRoot {
+  display: flex;
+}
+
+.notif {
+  display: flex;
+  margin-right: 13px;
+}
+
+.notif_label {
+  margin-left: -14px;
+  margin-top: 2px;
+}

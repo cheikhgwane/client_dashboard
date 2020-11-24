@@ -1,0 +1,59 @@
+.card {
+  width: 329px;
+  height: 204px;
+  box-shadow: 6px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  border-radius: 15px 15px 15px 15px;
+}
+
+.blue_rose_dark {
+  background: linear-gradient(
+    8deg,
+    rgba(57, 12, 27, 1) 2%,
+    rgba(48, 55, 120, 1) 34%,
+    rgba(255, 0, 147, 1) 87%
+  );
+}
+
+.blue {
+  background-color: #303778;
+}
+
+.rose_red {
+  background: linear-gradient(
+    277deg,
+    rgba(128, 8, 41, 1) 16%,
+    rgba(164, 51, 84, 1) 100%
+  );
+}
+
+.green {
+  background-color: #80ca46;
+}
+
+.gold {
+  background: linear-gradient(
+    35deg,
+    rgba(237, 207, 118, 1) 25%,
+    rgba(236, 190, 57, 1) 50%,
+    rgba(224, 168, 5, 1) 100%
+  );
+}
+
+.black {
+  background-color: #2a2a29;
+}
+
+.blue_rose_light {
+  background: linear-gradient(
+    9deg,
+    rgba(225, 75, 147, 1) 28%,
+    rgba(142, 97, 200, 1) 72%,
+    rgba(65, 118, 248, 1) 100%
+  );
+}
+
+.curve {
+  width: 300px;
+  -moz-border-radius: 50px 0 0 50px;
+  border-radius: 50px 0 0 50px;
+}

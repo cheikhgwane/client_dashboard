@@ -1,9 +1,53 @@
+@font-face {
+  font-family: "Open-Sans";
+  src: local("Open-Sans"),
+    url(/src/font/OpenSans/OpenSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: local("Playfair"),
+    url(/src/font/Playfair_Display/PlayfairDisplay-Regular.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Stencil";
+  src: local("Stencil"),
+    url(/src/font/Stencil_Display/BigShouldersStencilDisplay-Thin.ttf)
+      format("truetype");
+}
+
 .card {
   width: 329px;
   height: 204px;
   box-shadow: 6px 10px 16px -12px rgba(0, 0, 0, 0.75);
   border-radius: 15px 15px 15px 15px;
+  padding: 15px;
 }
+
+h3 {
+  color: white;
+  font-family: "Playfair";
+}
+.card_content {
+  margin-top: 35px;
+  font-family: "Open-Sans";
+  font-size: 20px;
+  color: white;
+}
+.exp_date {
+  color: white;
+  font-family: "Stencil";
+  margin-top: 8px;
+}
+
+.footer {
+  margin-top: 10px;
+  display: flex;
+}
+
+/*card color*/
 
 .blue_rose_dark {
   background: linear-gradient(
@@ -14,7 +58,7 @@
   );
 }
 
-.blue {
+.blue_card {
   background-color: #303778;
 }
 
@@ -50,10 +94,4 @@
     rgba(142, 97, 200, 1) 72%,
     rgba(65, 118, 248, 1) 100%
   );
-}
-
-.curve {
-  width: 300px;
-  -moz-border-radius: 50px 0 0 50px;
-  border-radius: 50px 0 0 50px;
 }

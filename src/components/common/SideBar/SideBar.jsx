@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Menu, Icon, Image, Divider } from "semantic-ui-react";
 import { ThemeContext } from "../../../config/ThemeProvider";
-import logo from "../../../assets/logo.png";
 import "./Sidebar.css";
 
 const { Item } = Menu;
@@ -29,7 +28,7 @@ export default function SideBar({ items, vertical, onClick }) {
           <h2 style={{ color: sideBar.headerColor }}>PentaBank</h2>
         </div>
         <div>
-          <Image circular size="tiny" src={logo}></Image>
+          <Image circular size="tiny" src="/logo.png"></Image>
         </div>
       </Item>
       <Divider></Divider>
